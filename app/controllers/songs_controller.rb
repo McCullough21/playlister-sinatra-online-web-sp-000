@@ -11,7 +11,7 @@ class SongsController < ApplicationController
 
    get '/songs/:slug' do
      @song = Song.find {|song| song.slug == params[:slug]}
-     erb :'/songs/show'
+     erb :'/songs/show', locals: {message: "Successfully created song."}
    end
 
    post '/songs' do
