@@ -20,7 +20,7 @@ class SongsController < ApplicationController
      @song.genre_ids = params[:genres]
      @song.save
 
-     erb :"/songs/#{@song.id}", locals: {message: "Successfully created song."}
+     erb :"/songs/show", locals: {message: "Successfully created song."}
    end
 
    get '/songs/:slug/edit' do
