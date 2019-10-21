@@ -45,7 +45,7 @@ class SongsController < ApplicationController
      @song.save
 
 
-     erb :"/songs/show", locals: {message: "Song successfully updated."}
+     erb :"/songs/show", locals: {message: "Successfully updated song."}
 
    end
 
